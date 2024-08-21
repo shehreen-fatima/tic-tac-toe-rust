@@ -1,0 +1,15 @@
+fn main() {
+   let message = get_hello_world();
+   let string = get_hello_world_string();
+   
+   println!("{}", message);
+   println!("{}", string);
+}
+
+fn get_hello_world() -> &'static str {
+    return "Hello World";
+}
+
+fn get_hello_world_string() -> String {
+    return String::from("Hello World");
+}
